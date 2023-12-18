@@ -1,0 +1,23 @@
+CREATE DATABASE demo;
+USE demo;
+
+create table users (
+ id  int(3) NOT NULL AUTO_INCREMENT,
+ name varchar(120) NOT NULL,
+ email varchar(220) NOT NULL,
+ country varchar(120),
+ PRIMARY KEY (id)
+);
+INSERT INTO users(NAME, EMAIL, COUNTRY)
+VALUEs('NARUTO','NARUTO123@GMAIL.COM','JP'),
+      ('NARUTO1','NARUTO1231@GMAIL.COM','JP'),
+      ('NARUTO2','NARUTO1232@GMAIL.COM','JP'),
+      ('NARUTO3','NARUTO1233@GMAIL.COM','JP'),
+      ('NARUTO4','NARUTO1234@GMAIL.COM','JP'),
+      ('NARUTO5','NARUTO1235@GMAIL.COM','JP'),
+      ('NARUTO6','NARUTO1236@GMAIL.COM','JP'),
+      ('NARUTO7','NARUTO1237@GMAIL.COM','JP'),
+      ('NARUTO8','NARUTO1238@GMAIL.COM','JP');
+
+use demo;
+drop table users
